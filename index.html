@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Case Study Report</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            border: 1px solid black;
+            max-width: 100%;
+            background-color: #ffffff;
+        }
+
+        h2 { 
+            text-align: center; 
+            margin-bottom: -15px;
+            font-family: "Playfair Display", "Libre Bodoni", "Didot", serif;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: "Lora", "Merriweather", "Palatino Linotype", "Book Antiqua", serif;
+            font-style: italic;
+        }
+
+        .container { 
+            width: 60%; 
+            margin: auto; 
+            padding: 20px; 
+            border: 1px solid black;
+            background-color: beige;
+        }
+
+        input { 
+            border: none; 
+            border-bottom: 1px solid black; 
+            width: 200px; 
+            font-size: 16px; 
+            display: inline-block;
+            text-align: justify;
+            background-color: beige;
+        }
+
+        .wide-input { 
+            width: 70%; 
+        }
+
+        @page {
+            size: 8.5in 14in;
+            margin-top: 5mm;
+            margin-left: 30mm;
+            margin-right: 30mm;
+            margin-bottom: 20mm;
+        }
+
+        header {
+            width: 100%;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        header img {
+            width: 70%;
+            height: auto;
+            object-fit: cover;
+            background-color: beige;
+        }
+
+        .pass {
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: -5mm;
+            margin-right: 5mm;
+        }
+
+        .print-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .print-btn:hover {
+            background-color: #0056b3;
+        }
+        @media print {
+            .print-btn {
+                display: none;
+            }
+            .container {
+                border: none;
+                width: 100%;
+            }
+            body {
+                border: none;
+            }
+            .page {
+                page-break-before: always; /* Forces a new page */
+                margin-top: 2%;
+            }
+            .makulitka{
+                width: fit-content;
+            }
+            header{
+                margin-left: -25px;
+            }
+        }
+
+        .required{
+            text-align: center;
+        }
+        .makulitka{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container" id="page1">
+        <header>
+            <img src="header.png" alt="Header Image" class="makulitka">
+        </header>
+        <h2>CO-MAKER STATEMENT</h2>
+    
+        <div class="pass">
+            <p style="text-align: justify; font-style: normal; text-indent: 50px;">
+                We, <input type="text" class="required"> / <input type="text" class="required">, 
+                of legal age, Filipino, and a resident of <input type="text" class="required" style="width: 85%;"> and <input type="text" class="required" style="width: 85%;">, 
+                respectively, do hereby agree to be co-makers of <input type="text" class="required"> for the Promissory Note granted by 
+                <strong>Bicutan Medical Center, Inc. (BMCI)</strong>, New Lower Bicutan, Taguig City in amount of
+                <input type="text" class="required" style="width: 48%"> (Php <input type="text" class="required" style="width: 10%">).
+            </p>
+            <p style="text-align: justify; font-style: normal; text-indent: 50px;">
+                That being the co-makers, we hereby bind ourselves to assume the obligation in case the borrower will not pay or fails to pay on time his/her promissory note to BMCI. 
+                We further assure to assume <strong>FULL RESPONSIBILITY</strong> in paying full moment in case the borrower will transfer residence or nowhere to find.
+            </p>
+            <p style="text-align: justify; font-style: normal; text-indent: 50px;"> 
+                In witness whereof, we have hereunto fixed our signatures this <input type="text" class="required" style="width: 5%;">
+                day of <input type="text" class="required" style="width: 10%;"> 20<input type="text" class="required" style="width: 5%;">
+                at <input type="text" class="required" style="width: 30%;">, Taguig City.
+            </p>
+           <br>
+           <p style="text-align: right; margin-bottom: -15px"><input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px">Signature over Printed Name</p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" class="required"></p>
+            <br>
+            <br>
+            <p style="text-align: right; margin-bottom: -15px"><input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px">Signature over Printed Name</p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" class="required"></p>
+            <br>
+            <br>
+            <p style="font-style: normal;"><strong>Witnessed by:</strong></p>
+            <p><input type="text" class="required" style="text-align: center; margin-bottom: -15px"></p>
+            <p style="text-align: left; font-style: normal; margin-top: -15px">Signature over Printed Name</p>
+        </div>
+    </div>
+<br>
+    <div class="page"></div> <!-- Forces a new page -->
+    <div class="container" id="page2">
+        <header>
+            <img src="header.png" alt="Header Image" class="makulitka">
+        </header>
+        <h2>CO-MAKER STATEMENT</h2>
+        
+        <div class="pass">
+            <p style="text-align: justify; font-style: normal; text-indent: 50px;">
+                I, <input type="text" class="required">, 
+                of legal age, Filipino, and a resident of <input type="text" class="required" style="width: 75%;"> and, 
+                respectively, do hereby agree to be co-makers of <input type="text" class="required"> for the Promissory Note granted by 
+                <strong>Bicutan Medical Center, Inc. (BMCI)</strong>, New Lower Bicutan, Taguig City in amount of
+                <input type="text" class="required" style="width: 48%"> (Php <input type="text" class="required" style="width: 10%">).
+            </p>
+            <p style="text-align: justify; font-style: normal; text-indent: 50px;">
+                That being the co-makers, we hereby bind ourselves to assume the obligation in case the borrower will not pay or fails to pay on time his/her promissory note to BMCI. 
+                We further assure to assume <strong>FULL RESPONSIBILITY</strong> in paying full moment in case the borrower will transfer residence or nowhere to find.
+            </p>
+            <p style="text-align: justify; font-style: normal; text-indent: 50px;"> 
+                In witness whereof, we have hereunto fixed our signatures this <input type="text" class="required" style="width: 5%;">
+                day of <input type="text" class="required" style="width: 10%;"> 20<input type="text" class="required" style="width: 5%;">
+                at <input type="text" class="required" style="width: 30%;">, Taguig City.
+            </p>
+           <br>
+           <p style="text-align: right; margin-bottom: -15px"><input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px">Signature over Printed Name</p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Valid ID:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued on:</strong> <input type="text" class="required"></p>
+            <p style="text-align: right; font-style: normal; margin-bottom: -15px"><strong>Issued at:</strong> <input type="text" class="required"></p>
+            <br>
+            <br>
+            <p style="font-style: normal;"><strong>Witnessed by:</strong></p>
+            <p><input type="text" class="required" style="text-align: center; margin-bottom: -15px"></p>
+            <p style="text-align: left; font-style: normal; margin-top: -15px">Signature over Printed Name</p>
+        </div>
+    </div>
+
+    <button class="print-btn" onclick="checkAndPrint()">Print Document</button>
+
+    <script>
+        function checkAndPrint() {
+            let inputs = document.querySelectorAll(".required");
+            let emptyFields = [];
+
+            inputs.forEach((input, index) => {
+                if (!input.value.trim()) {
+                    emptyFields.push(index + 1); // Track empty fields
+                }
+            });
+
+            if (emptyFields.length > 0) {
+                let confirmPrint = confirm("Some fields are still empty. Do you want to proceed with printing?");
+                if (!confirmPrint) {
+                    return;
+                }
+            }
+
+            window.addEventListener("beforeprint", function () {
+                if (checkEmptyFields()) {
+                    alert("Some fields are still empty! Please complete them before printing.");
+                }
+            });
+            window.print();
+        }
+    </script>
+</body>
+</html>
