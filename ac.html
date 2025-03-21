@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acknowledgment Certificate</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="ac.css"></link>
+    <link rel="icon" href="bmci logo.png"></link>
+</head>
+<body>
+
+    <div id="certificate" class="certificate">
+        <div class="header">
+            <img src="header.png" alt="Certificate Header">
+        </div>
+        <div class="content">
+            <h3 style="font-family:'Times New Roman', Times, serif;">ACKNOWLEDGEMENT CERTIFICATE</h3>
+            <p style = "text-align: right; padding-top:20px;">Date: <input type="text" class = "input-date"></span></p>
+            <p style = "text-indent: 50px; padding-top: 30px;">Bicutan Medical Center has released the (<input type="text" class = "input">)</input></p>
+            <p>to <input type="text" class = "text"> under the collateral of patient <input type="text" class = "text-3">,</p>
+            <p><input type="text" class = "text-1"> years old address at <input type="text" class = "text-2">, </p>
+            <p>since he/she <b>fully settled</b> the hospital bills amounting of <input type="text" class = "text-4"></p>
+            <p>pesos thru <b>Guarantee Letter </b>from <input type="text" class = "text-4"> (<input type="text" class = "text-3">)</p>
+            <p>and <b>Cash (<input type="text" class = "text-3">) pesos.</b> The patient and relative has no longer </p>
+            <p> obligation and cleared from the promissory note that they have signed last</p>
+            <p><input type="text" class = "text-3"> from the hospital.</p>
+        </div>
+        <div class="signature">
+            <p><input type="text" class = "text-3"></p>
+            <p><input type="text" class = "text-3"></p>
+        </div>
+        <div class="footer">
+            <p>Prepared by: <input type="text" class = "text-5"></p>
+            <p style="margin-left: 17%;">Credit and Collection</p>
+        </div>
+        <div class="footer">
+            <p>Noted by:ㅤ<input type="text" class = "text-5"></p>
+            <p style="margin-left: 15%;">Asst. Finance Manager</p>
+        </div>
+        <div class="footer">
+            <p>Noted by:ㅤ<input type="text" class = "text-5"></p>
+            <p style="margin-left: 15%;">Cashier Staff</p>
+        </div>
+    </div>
+
+    <!--<button class="btn" onclick="downloadCertificate()">Download as Image</button>-->
+
+    <script>
+        document.getElementById("date").innerText = new Date().toLocaleDateString();
+
+        function downloadCertificate() {
+            html2canvas(document.getElementById("certificate")).then(canvas => {
+                let link = document.createElement("a");
+                link.download = "acknowledgment_certificate.png";
+                link.href = canvas.toDataURL("image/png");
+                link.click();
+            });
+        }
+    </script>
+
+</body>
+</html>
